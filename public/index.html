@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Roamly AI creates thoughtful, personalized travel itineraries with IBM watsonx.ai.">
+  <title>Roamly AI — Your Journey, Intelligently Planned</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="">
+  <nav class="navbar navbar-expand-lg fixed-top glass-nav" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand brand-mark" href="/"><span class="brand-icon"><i class="bi bi-send-fill"></i></span>Roamly<span>AI</span></a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><i class="bi bi-list fs-2"></i></button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link " href="/planner">Planner</a></li>
+          <li class="nav-item"><a class="nav-link " href="/dashboard">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link " href="/about">About</a></li>
+          <li class="nav-item"><a class="nav-link " href="/contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions d-flex align-items-center gap-2 mt-3 mt-lg-0">
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode"><i class="bi bi-moon-stars"></i></button>
+          <a class="btn btn-link nav-login" href="/login">Log in</a>
+          <a class="btn btn-primary btn-sm px-3" href="/register">Join free</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main><section class="hero-section">
+  <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+  <div class="container hero-grid">
+    <div class="hero-copy reveal">
+      <span class="eyebrow"><i class="bi bi-stars"></i> Powered by IBM watsonx.ai</span>
+      <h1>Go farther.<br><em>Plan smarter.</em></h1>
+      <p>Tell us how you like to travel. Roamly turns your preferences into a practical, personal itinerary in moments.</p>
+      <div class="d-flex flex-wrap gap-3"><a class="btn btn-primary btn-lg" href="/planner">Create my trip <i class="bi bi-arrow-up-right"></i></a><a class="btn btn-soft btn-lg" href="#how-it-works"><i class="bi bi-play-circle"></i> See how it works</a></div>
+      <div class="hero-proof"><div class="avatar-stack"><span>AK</span><span>JM</span><span>SR</span><span>+</span></div><div><strong>4.9/5</strong><small> loved by curious travelers</small></div></div>
+    </div>
+    <div class="hero-visual reveal delay-1">
+      <div class="postcard-card main-postcard"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85" alt="Traveler overlooking a mountain lake"><div class="postcard-caption"><span>Next escape</span><strong>Wild horizons</strong></div></div>
+      <div class="floating-ticket"><span class="ticket-icon"><i class="bi bi-compass"></i></span><div><small>AI itinerary</small><strong>Ready in seconds</strong></div><i class="bi bi-check-circle-fill"></i></div>
+      <div class="route-line"><span></span><i class="bi bi-airplane-fill"></i></div>
+      <div class="mini-postcard"><img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=500&q=80" alt="Tropical coast"><span>12° north</span></div>
+    </div>
+  </div>
+  <div class="scroll-note"><span></span> Scroll to wander</div>
+</section>
+
+<section class="section-pad destinations-section">
+  <div class="container">
+    <div class="section-heading split-heading reveal"><div><span class="eyebrow">Places worth a pin</span><h2>Start with a little<br><em>inspiration.</em></h2></div><p>From early trains through alpine valleys to midnight food walks, discover trips that feel like you.</p></div>
+    <div class="destination-grid">
+      <article class="destination-card card-tall reveal"><img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=800&q=85" alt="Tokyo at night"><div class="image-shade"></div><div class="destination-meta"><span>Japan</span><h3>Tokyo</h3><p>Neon rhythm, quiet rituals</p></div><a href="/planner?destination=Tokyo" aria-label="Plan a Tokyo trip"><i class="bi bi-arrow-up-right"></i></a></article>
+      <article class="destination-card reveal delay-1"><img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=800&q=85" alt="Amalfi Coast"><div class="image-shade"></div><div class="destination-meta"><span>Italy</span><h3>Amalfi</h3><p>Cliff roads and lemon light</p></div><a href="/planner?destination=Amalfi" aria-label="Plan an Amalfi trip"><i class="bi bi-arrow-up-right"></i></a></article>
+      <article class="destination-card reveal delay-2"><img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=800&q=85" alt="Peruvian mountains"><div class="image-shade"></div><div class="destination-meta"><span>Peru</span><h3>Cusco</h3><p>Ancient paths, high wonder</p></div><a href="/planner?destination=Cusco" aria-label="Plan a Cusco trip"><i class="bi bi-arrow-up-right"></i></a></article>
+      <article class="destination-card card-wide reveal"><img src="https://images.unsplash.com/photo-1533669955142-6a73332af4db?auto=format&fit=crop&w=1200&q=85" alt="Kerala backwaters"><div class="image-shade"></div><div class="destination-meta"><span>India</span><h3>Kerala</h3><p>Slow water, green horizons</p></div><a href="/planner?destination=Kerala" aria-label="Plan a Kerala trip"><i class="bi bi-arrow-up-right"></i></a></article>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad how-section" id="how-it-works">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5 reveal"><span class="eyebrow">Built around you</span><h2>Less searching.<br><em>More going.</em></h2><p class="lead-copy">Roamly brings the scattered pieces of trip planning into one calm, intelligent flow.</p><a href="/about" class="text-link">Inside our AI approach <i class="bi bi-arrow-right"></i></a></div>
+      <div class="col-lg-7"><div class="steps-list">
+        <div class="step-item reveal"><span>01</span><div class="step-icon coral"><i class="bi bi-sliders2"></i></div><div><h4>Share your travel style</h4><p>Set your pace, budget, companions, tastes, and must-do experiences.</p></div></div>
+        <div class="step-item reveal delay-1"><span>02</span><div class="step-icon gold"><i class="bi bi-stars"></i></div><div><h4>Let Granite connect the dots</h4><p>IBM watsonx.ai shapes your choices into a coherent, useful journey.</p></div></div>
+        <div class="step-item reveal delay-2"><span>03</span><div class="step-icon teal"><i class="bi bi-map"></i></div><div><h4>Take the plan anywhere</h4><p>Review, copy, print, or download your day-by-day itinerary.</p></div></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section class="quote-section"><div class="container"><div class="quote-card reveal"><i class="bi bi-quote"></i><blockquote>“The best itineraries leave enough room for the place to surprise you.”</blockquote><span>Roamly planning philosophy</span><a class="btn btn-light" href="/planner">Find your next place <i class="bi bi-arrow-right"></i></a></div></div></section></main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-5 py-5">
+        <div class="col-lg-5">
+          <a class="navbar-brand brand-mark footer-brand" href="/"><span class="brand-icon"><i class="bi bi-send-fill"></i></span>Roamly<span>AI</span></a>
+          <p class="footer-copy mt-3">Thoughtful journeys, shaped by your curiosity and powered by IBM watsonx.ai.</p>
+          <div class="social-row"><a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="#" aria-label="Github"><i class="bi bi-github"></i></a><a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></div>
+        </div>
+        <div class="col-6 col-lg-2"><h6>Explore</h6><a href="/planner">Plan a trip</a><a href="/dashboard">Dashboard</a><a href="/about">Our story</a></div>
+        <div class="col-6 col-lg-2"><h6>Project</h6><a href="/about">IBM watsonx.ai</a><a href="/contact">Support</a><a href="#">Privacy</a></div>
+        <div class="col-lg-3"><h6>Adventure notes</h6><p class="small text-secondary">Fresh planning tips, no inbox clutter.</p><div class="input-group footer-input"><input class="form-control" type="email" placeholder="Email address" aria-label="Email address"><button class="btn btn-primary" type="button"><i class="bi bi-arrow-right"></i></button></div></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Roamly AI. Internship project.</span><span>Built with Flask · Bootstrap · IBM Granite</span></div>
+    </div>
+  </footer>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3"><div id="appToast" class="toast border-0" role="status"><div class="toast-body d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i><span>Done</span></div></div></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+  <script src="/static/js/app.js"></script>
+  <script type="module" src="/static/js/auth.js"></script>
+  
+</body>
+</html>

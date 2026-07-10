@@ -1,0 +1,19 @@
+{
+  "name": "ai-travel-planner-watsonx",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "db:generate": "drizzle-kit generate"
+  },
+  "dependencies": {
+    "@netlify/database": "^1.0.0",
+    "@netlify/functions": "^5.0.0",
+    "@netlify/identity": "^1.2.0",
+    "drizzle-orm": "beta"
+  },
+  "devDependencies": {
+    "drizzle-kit": "beta",
+    "typescript": "^5.8.0"
+  }
+}

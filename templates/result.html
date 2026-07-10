@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block title %}Your Itinerary — Roamly AI{% endblock %}
+{% block body_class %}result-page{% endblock %}
+{% block content %}
+<section class="result-hero"><div class="container"><div class="result-heading"><div><span class="eyebrow"><i class="bi bi-check-circle-fill"></i> Your journey is ready</span><h1 id="resultTitle">A trip shaped<br><em>around you.</em></h1><p id="resultSummary">Your personalized itinerary appears below.</p></div><div class="result-actions"><button class="btn btn-soft" id="copyPlan"><i class="bi bi-copy"></i> Copy</button><button class="btn btn-soft" id="printPlan"><i class="bi bi-printer"></i> Print</button><button class="btn btn-primary" id="downloadPlan"><i class="bi bi-download"></i> PDF</button></div></div><div id="demoNotice" class="demo-notice d-none"><i class="bi bi-info-circle"></i> Demo itinerary shown. Add IBM watsonx.ai credentials to generate live AI plans.</div></div></section>
+<section class="section-pad pt-4"><div class="container" id="itineraryContent"><div class="result-empty"><div class="empty-compass"><i class="bi bi-compass"></i></div><h3>No itinerary loaded yet</h3><p>Start with your destination and preferences to create a personalized plan.</p><a class="btn btn-primary" href="/planner">Plan a journey</a></div></div></section>
+{% endblock %}

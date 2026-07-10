@@ -1,0 +1,12 @@
+{
+  "name": "AI Travel Planner using IBM watsonx.ai",
+  "description": "A personalized itinerary generator powered by IBM Granite or Llama foundation models.",
+  "repository": "https://github.com/your-username/AI-Travel-Planner",
+  "keywords": ["flask", "ibm-watsonx", "granite", "travel", "ai"],
+  "env": {
+    "WATSONX_API_KEY": { "description": "IBM Cloud API key", "required": false },
+    "WATSONX_PROJECT_ID": { "description": "watsonx.ai project ID", "required": false },
+    "WATSONX_URL": { "description": "Regional watsonx.ai base URL", "value": "https://us-south.ml.cloud.ibm.com" },
+    "WATSONX_MODEL_ID": { "description": "Foundation model ID", "value": "ibm/granite-3-8b-instruct" }
+  }
+}

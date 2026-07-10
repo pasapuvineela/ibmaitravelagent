@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Roamly AI creates thoughtful, personalized travel itineraries with IBM watsonx.ai.">
+  <title>Contact — Roamly AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="">
+  <nav class="navbar navbar-expand-lg fixed-top glass-nav" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand brand-mark" href="/"><span class="brand-icon"><i class="bi bi-send-fill"></i></span>Roamly<span>AI</span></a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><i class="bi bi-list fs-2"></i></button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link " href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link " href="/planner">Planner</a></li>
+          <li class="nav-item"><a class="nav-link " href="/dashboard">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link " href="/about">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions d-flex align-items-center gap-2 mt-3 mt-lg-0">
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode"><i class="bi bi-moon-stars"></i></button>
+          <a class="btn btn-link nav-login" href="/login">Log in</a>
+          <a class="btn btn-primary btn-sm px-3" href="/register">Join free</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main><section class="page-hero contact-hero"><div class="container"><span class="eyebrow">Say hello</span><h1>Questions, ideas,<br><em>or a postcard?</em></h1><p>Tell us what you’re planning or where we can improve the journey.</p></div></section>
+<section class="section-pad pt-0"><div class="container"><div class="contact-grid"><div class="contact-details"><div class="contact-card"><i class="bi bi-envelope-paper"></i><span>Email</span><a href="mailto:hello@roamly.example">hello@roamly.example</a></div><div class="contact-card"><i class="bi bi-geo-alt"></i><span>Project base</span><strong>India · Built for everywhere</strong></div><div class="contact-note"><i class="bi bi-clock"></i><p>We usually reply within two working days.</p></div></div><form class="contact-form needs-validation" novalidate id="contactForm"><div class="row g-4"><div class="col-md-6"><label class="form-label" for="contactName">Your name</label><input class="form-control" id="contactName" required></div><div class="col-md-6"><label class="form-label" for="contactEmail">Email address</label><input class="form-control" id="contactEmail" type="email" required></div><div class="col-12"><label class="form-label" for="contactTopic">What can we help with?</label><select class="form-select" id="contactTopic"><option>General question</option><option>Itinerary feedback</option><option>Technical support</option><option>Project collaboration</option></select></div><div class="col-12"><label class="form-label" for="contactMessage">Message</label><textarea class="form-control" id="contactMessage" rows="6" required placeholder="Tell us a little more..."></textarea></div><div class="col-12 d-flex justify-content-between align-items-center flex-wrap gap-3"><small class="text-secondary">Please don’t include passwords or API keys.</small><button class="btn btn-primary btn-lg" type="submit">Send message <i class="bi bi-send"></i></button></div></div></form></div></div></section></main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-5 py-5">
+        <div class="col-lg-5">
+          <a class="navbar-brand brand-mark footer-brand" href="/"><span class="brand-icon"><i class="bi bi-send-fill"></i></span>Roamly<span>AI</span></a>
+          <p class="footer-copy mt-3">Thoughtful journeys, shaped by your curiosity and powered by IBM watsonx.ai.</p>
+          <div class="social-row"><a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="#" aria-label="Github"><i class="bi bi-github"></i></a><a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></div>
+        </div>
+        <div class="col-6 col-lg-2"><h6>Explore</h6><a href="/planner">Plan a trip</a><a href="/dashboard">Dashboard</a><a href="/about">Our story</a></div>
+        <div class="col-6 col-lg-2"><h6>Project</h6><a href="/about">IBM watsonx.ai</a><a href="/contact">Support</a><a href="#">Privacy</a></div>
+        <div class="col-lg-3"><h6>Adventure notes</h6><p class="small text-secondary">Fresh planning tips, no inbox clutter.</p><div class="input-group footer-input"><input class="form-control" type="email" placeholder="Email address" aria-label="Email address"><button class="btn btn-primary" type="button"><i class="bi bi-arrow-right"></i></button></div></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Roamly AI. Internship project.</span><span>Built with Flask · Bootstrap · IBM Granite</span></div>
+    </div>
+  </footer>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3"><div id="appToast" class="toast border-0" role="status"><div class="toast-body d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i><span>Done</span></div></div></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+  <script src="/static/js/app.js"></script>
+  <script type="module" src="/static/js/auth.js"></script>
+  
+</body>
+</html>
