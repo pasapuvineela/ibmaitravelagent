@@ -5,17 +5,12 @@ Roamly AI is a complete, responsive travel planning application created for an I
 The repository supports two beginner-friendly workflows:
 
 - **Flask locally:** Jinja templates and the Python watsonx service run with `python app.py`.
-- **Netlify in production:** Pre-rendered pages use Netlify Functions for watsonx generation and Netlify Database for saved plans.
 
 ## Key technologies
 
 - HTML5, CSS3, JavaScript, Bootstrap 5, and Bootstrap Icons
 - Python 3 and Flask
 - IBM watsonx.ai with IBM Granite or compatible Llama models
-- Netlify Functions
-- Netlify Database with Drizzle ORM
-- Netlify Identity for deployed account flows
-- jsPDF for itinerary downloads
 
 ## Project structure
 
